@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Лаба: 8</title>
+    <meta charset="utf-8">
+</head>
+<body style='background-color: white; color: black' class = "myBody">
+<p>Лабороторная работа №8</p>
+<h2><a href="https://www.google.ru/" class="myA">Ссылка</a></h2>
+    <script type="text/javascript">
+        var a = prompt("Введите цвет фона: ");
+        var b = prompt("Введите цвет текста: ");
+        var c = prompt("Введите ссылку: ");
+        var bodyU = document.querySelector("body.myBody");
+        bodyU.setAttribute("style", `background-color:${a}`);
+        var root = document.documentElement;
+        root.style.color = b;
+        var ancor = document.querySelector("a.myA");
+        ancor.setAttribute("href", `${c}`);
+    </script>
+</body>
+</html>
